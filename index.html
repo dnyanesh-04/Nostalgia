@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoiceClash</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .title-bar {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative; /* Add position relative to position the 'About' text */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 42px;
+        }
+        
+       
+        .welcome-message {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .description {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        
+        .continue-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .continue-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px ;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 150px;
+        
+        }
+
+        .options {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .create-options {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 11px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            
+        }
+        .footer {
+            text-align: center;
+            color: black;
+            padding: 15px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .welcome-message {
+                font-size: 24px;
+                margin-top: 20px; /* Move upwards */
+            }
+
+            .description {
+                font-size: 16px;
+                margin-top: 10px; /* Move upwards */
+            }
+
+            .about-link {
+                font-size: 14px;
+                top: 2px;
+                right: 10px;
+            }
+
+            .footer {
+                font-size: 14px;
+                padding: 10px 0;
+            }
+
+            .continue-button, input[type="text"] {
+                width: 90%; /* Make button and input take 90% of the container's width */
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .welcome-message {
+                font-size: 25px;
+                margin-top: 22px; /* Move upwards */
+            }
+
+            .description {
+                font-size: 16px;
+                margin-top: 15px; /* Move upwards */
+            }
+
+            .about-link {
+                font-size: 10px;
+                position: absolute;
+                top: -10px;
+                right: 05px;
+                color: white;
+            }
+
+            .footer {
+                font-size: 15px;
+                padding: 8px 0;
+            }
+             
+            .continue-button, input[type="text"] {
+                width: 50%; /* Make button and input take 95% of the container's width */
+            }
+           
+        }
+    
+
+        /* Style for the 'About' link */
+        .about-link {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .about-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <script>
+        function signUp() {
+            var username = document.getElementById("username").value;
+            if (username.length < 5) {
+                alert("Username must be at least 5 characters long.");
+                return;
+            }
+            window.location.href = "home.html"; // Redirect to the success page
+        }
+    </script>
+</head>
+<body>
+    <div class="title-bar">
+        <h1>ChoiceClash</h1>
+        <!-- About link -->
+        <a href="about.html" class="about-link">About</a>
+    </div>
+    
+    <div class="welcome-message">
+        <p>Welcome to ChoiceClash</p>
+    </div>
+    
+    <div class="description">
+            <p>ChoiceClash is your ultimate destination for reliving your childhood memories.</p>
+            <p>We have opened up ChoiceClash for popular consumption at Pillai College.</p>
+            <p>It is mainly for the people born between 2000-2010</p>
+            <p>Features of NostalgiaMash:</p>
+            <ul>
+                <li>Explore categories like Cartoons, TV Shows, Movies, and more. </li>
+                <li>Discover and comment for the best in each category</li>
+                <li>Enjoy a trip down memory lane with NostMash</li>
+            </ul>
+        
+    </div>
+
+<div class="options">
+    <p>To get started, create a username</p>
+</div>
+    
+    <div class="create-options" id="createOptions">
+        <input type="text" id="username" placeholder="Enter username"><br>
+        <button class="continue-button" onclick="signUp()">Continue</button>
+    </div>
+    <div class="footer">
+        <p>&copy; Nostalgia 2024</p>
+        <p>A Dnyanesh Mohite Production</p>
+    </div>
+    
+    <!-- Rest of your webpage content goes here -->
+    
+</body>
+</html>
