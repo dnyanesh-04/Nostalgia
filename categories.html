@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            position: relative;
+            height: 100vh;
+        }
+        
+        .title-bar {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 18px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        .options {
+            width: 40%; /* Adjusted width */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; /* Increased gap between options */
+            justify-content: center;
+            height: calc(100% - 100px);
+        }
+        
+        .option {
+            background-color: orange;
+            color: white;
+            padding: 8px; /* Reduced padding */
+            width: 142px; /* Reduced width */
+            height: 40px; /* Reduced height */
+            text-align: center;
+            margin: auto; /* Center horizontally */
+            border-radius: 8px; /* Added border radius for a better look */
+            font-size: 16px; /* Reduced font size */
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .small-movies {
+            padding-top: 6px; /* Adjusted padding */
+            padding-bottom: 6px; /* Adjusted padding */
+        }
+        
+        .top-left {
+            padding-left: 20px;
+            font-size: 20px; /* Increased font size */
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .options {
+                grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
+            }
+            
+            .top-left {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .option {
+                font-size: 14px;
+                height: 36px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .options {
+                grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
+            }
+
+            .top-left {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .option {
+                font-size: 15px;
+                height: 32px;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            .options {
+                grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
+            }
+
+            .top-left {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .option {
+                font-size: 12px;
+                height: 28px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <h1>NostalgicMash</h1>
+    </div>
+    
+    <div class="top-left">
+        <p>Choose the section that you like the most.</p>
+    </div>
+    
+     <div class="options">
+        <a href="cperfect.html" class="option">CARTOONS</a>
+        <a href="tv_shows.html" class="option">TV SHOWS</a>
+        <a href="movies.html" class="option">MOVIES</a>
+        <a href="movie_franchises.html" class="option small-movies">MOVIE FRANCHISES</a>
+        <a href="songs.html" class="option">SONGS</a>
+        <a href="music.html" class="option">MUSIC</a>
+        <a href="video_games.html" class="option">VIDEO GAMES</a>
+        <a href="pc_games.html" class="option">PC GAMES</a>
+        <a href="mobile_games.html" class="option">MOBILE GAMES</a>
+        <a href="animated_films.html" class="option">ANIMATED FILMS</a>
+        <a href="sports_events.html" class="option">SPORTS EVENTS</a>
+        <a href="old_commercials.html" class="option">OLD COMMERCIALS</a>
+        <a href="childhood_toys.html" class="option">CHILDHOOD TOYS</a>
+        <a href="childhood_food.html" class="option">CHILDHOOD FOOD</a>
+    </div>
+    
+</body>
+</html>
