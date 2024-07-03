@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NostalgicMash</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-bar {
+            background-color: orange;
+            color: white;
+            padding: 20px; /* Adjusted padding for spacing */
+            text-align: center;
+            font-size: 24px;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px; /* Gap between the menu items */
+        }
+
+        .menu a {
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+            color: orange;
+        }
+
+        .content {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 1200px; /* Constrain the content width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item-number {
+            font-size: 24px;
+            text-align: left;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px; /* Reduce the margin-bottom to move the image upwards */
+            padding-left: 15px;
+            color: orange;
+        }
+
+        .item img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+
+        .item-text {
+            font-size: 22px;
+            margin: 10px 0;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .item-text:hover {
+            text-decoration: none;
+            color: orange;
+        }
+
+        @media (max-width: 600px) {
+            .title-bar {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+
+            .item-number {
+                font-size: 20px;
+            }
+
+            .item-text {
+                font-size: 20px;
+            }
+
+            .item img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <h1>NostalgicMash</h1>
+    </div>
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="item-number">1.</div>
+            <a href="cb.html"><img src="C:\Users\Bharat\Downloads\Harry Potter.png" alt="Harry Potter"></a>
+            <a href="cb.html" class="item-text">Harry Potter</a>
+        </div>
+        <div class="item">
+            <div class="item-number">2.</div>
+            <a href="ben10.html"><img src="C:\Users\Bharat\Downloads\POTC.jpg" alt="Pirates of the Caribbean"></a>
+            <a href="ben10.html" class="item-text">Pirates of the Caribbean</a>
+        </div>
+        <div class="item">
+            <div class="item-number">3.</div>
+            <a href="dragonballz.html"><img src="C:\Users\Bharat\Downloads\TCON.webp" alt="The Chronicles of Narnia"></a>
+            <a href="dragonballz.html" class="item-text">The Chronicles of Narnia</a>
+        </div>
+        <div class="item">
+            <div class="item-number">4.</div>
+            <a href="johnytest.html"><img src="C:\Users\Bharat\Downloads\PJ.jpg" alt="Percy Jackson"></a>
+            <a href="johnytest.html" class="item-text">Percy Jackson</a>
+        </div>
+        <div class="item">
+            <div class="item-number">5.</div>
+            <a href="oggy.html"><img src="C:\Users\Bharat\Downloads\LOTR.jpg" alt="Lord Of The Rings"></a>
+            <a href="oggy.html" class="item-text">Lord Of The Rings</a>
+        </div>
+        <div class="item">
+            <div class="item-number">6.</div>
+            <a href="rollno.21.html"><img src="C:\Users\Bharat\Downloads\Home Alone.jpg" alt="Home Alone"></a>
+            <a href="rollno.21.html" class="item-text">Home Alone</a>
+        </div>
+        <div class="item">
+            <div class="item-number">7.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\JP.jpg" alt="Jurassic Park"></a>
+            <a href="baskarohenry.html" class="item-text">Jurassic Park</a>
+        </div>
+        <div class="item">
+            <div class="item-number">8.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Godzilla.jpeg" alt="Godzilla"></a>
+            <a href="baskarohenry.html" class="item-text">Godzilla</a>
+        </div>
+        <div class="item">
+            <div class="item-number">9.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\King Kong.jpeg" alt="King Kong"></a>
+            <a href="baskarohenry.html" class="item-text">King Kong</a>
+        </div>
+        <div class="item">
+            <div class="item-number">10.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Anaconda.jpg" alt="Anaconda"></a>
+            <a href="baskarohenry.html" class="item-text">Anaconda</a>
+        </div>
+        <div class="item">
+            <div class="item-number">11.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\The Mummy.png" alt="The Mummy"></a>
+            <a href="baskarohenry.html" class="item-text">The Mummy</a>
+        </div>
+        <div class="item">
+            <div class="item-number">12.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\GR.jpg" alt="Ghost Rider"></a>
+            <a href="baskarohenry.html" class="item-text">Ghost Rider</a>
+        </div>
+        <div class="item">
+            <div class="item-number">13.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\FF.jpg" alt="Fast and Furious"></a>
+            <a href="baskarohenry.html" class="item-text">Fast and Furious</a>
+        </div>
+        <div class="item">
+            <div class="item-number">14.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\RH.webp" alt="Rush Hour"></a>
+            <a href="baskarohenry.html" class="item-text">Rush Hour</a>
+        </div>
+        <div class="item">
+            <div class="item-number">15.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\MIB.jpg" alt="Men in Black"></a>
+            <a href="baskarohenry.html" class="item-text">Men in Black</a>
+        </div>
+        <div class="item">
+            <div class="item-number">16.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Transformers.webp" alt="Transformers"></a>
+            <a href="baskarohenry.html" class="item-text">Transformers</a>
+        </div>
+        <div class="item">
+            <div class="item-number">17.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\BEAN.jpg" alt="Mr. Bean"></a>
+            <a href="baskarohenry.html" class="item-text">Mr. Bean</a>
+        </div>
+        <div class="item">
+            <div class="item-number">18.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\JE.jpg" alt="Johnny English"></a>
+            <a href="baskarohenry.html" class="item-text">Johnny English</a>
+        </div>
+        <div class="item">
+            <div class="item-number">19.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\JB.webp" alt="James Bond"></a>
+            <a href="baskarohenry.html" class="item-text">James Bond</a>
+        </div>
+        <div class="item">
+            <div class="item-number">20.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\MR.jpg" alt="The Maze Runner"></a>
+            <a href="baskarohenry.html" class="item-text">The Maze Runner</a>
+        </div>
+        <div class="item">
+            <div class="item-number">21.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Zombieland.webp" alt="Zombieland"></a>
+            <a href="baskarohenry.html" class="item-text">Zombieland</a>
+        </div>
+        <div class="item">
+            <div class="item-number">22.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Hangover.jpg" alt="Hangover"></a>
+            <a href="baskarohenry.html" class="item-text">Hangover</a>
+        </div>
+        <div class="item">
+            <div class="item-number">23.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\IJ.png" alt="Indiana Jones"></a>
+            <a href="baskarohenry.html" class="item-text">Indiana Jones</a>
+        </div>
+        <div class="item">
+            <div class="item-number">24.</div>
+            <a href="baskarohenry.html"><img src="C:\Users\Bharat\Downloads\Twilight.webp" alt="Twilight"></a>
+            <a href="baskarohenry.html" class="item-text">Twilight</a>
+        </div>
+    </div>
+</body>
+</html>
